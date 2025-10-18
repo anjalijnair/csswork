@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Contact Card</title>
+<style>
+    /* Reset default margins */
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #f5f7fa;
+    }
+
+    /* Fixed Header Bar */
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #08043a;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        letter-spacing: 1px;
+       
+    }
+
+    /* Main container */
+    .profile-container {
+        margin-top: 80px; /* space for fixed header */
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: relative;
+        padding: 20px;
+        overflow: auto;
+    }
+
+    /* Profile Image */
+    .profile-img {
+        float: left;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+
+    /* Employee details */
+    .profile-content {
+        overflow: auto;
+    }
+
+    .profile-content h2 {
+        margin: 0;
+        color: #333;
+    }
+
+    .profile-content h4 {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    .profile-content p {
+        margin-top: 10px;
+        line-height: 1.5;
+        color: #555;
+    }
+
+    /* Vertical line separator */
+    .separator {
+        border-left: 2px solid #ccc;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 220px;
+    }
+
+    /* Contact Info box */
+    .contact-info {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 180px;
+        background-color: #e8f0fe;
+        border: 1px solid #b0c4de;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info h3 {
+        margin-top: 0;
+        color: #004080;
+    }
+
+    .contact-info p {
+        margin: 5px 0;
+        color: #333;
+    }
+
+    /* Scrollbar for overflow */
+    .profile-container {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    Company Contact Card
+</header>
+
+<div class="profile-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1TGbtIMEV-RlGs13jcQgJCxJeMMJmn3jqlg&s.jpg" alt="Employee Photo" class="profile-img">
+
+    <div class="separator"></div>
+
+    <div class="profile-content">
+        <h2>Aravind</h2>
+        <h4>HR Manager</h4>
+        <p>
+            Aravind has over 10 years of experience in HR department. 
+            He leads the creative marketing campaigns and helps grow our company's online presence 
+            through innovative social media engagement and customer outreach programs.
+        </p>
+    </div>
+
+    <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p> +9198745432</p>
+        <p>Aravind@.com</p>
+    </div>
+</div>
+
+</body>
+</html>
